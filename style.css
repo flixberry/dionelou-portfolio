@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0d0d0d; /* Deep black background */
+  color: #eeeeee; /* Light text for readability */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(135deg, #c0c0c0, #a9a9a9); /* Silver gradient */
+  color: #0d0d0d; /* Dark text for contrast */
+  border-radius: 12px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Align vertically */
+  gap: 40px;               /* Space between text and photo */
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.intro-text {
+  max-width: 400px;
+}
+
+.intro-text h1 {
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  line-height: 1.5;
+}
+
+.photo-box {
+  max-width: 160px;
+  display: flex;
+  align-items: flex-end; /* Align image to bottom of header */
+  height: 100%; /* Stretch container to full header height */
+}
+
+.profile-pic {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  border: none;
+  background: none;
+  margin-bottom: 0;
+}
+
+
+h2 {
+  color: #6e8efb; /* Electric blue accent */
+  margin-top: 40px;
+  font-size: 1.8em;
+}
+
+section {
+  margin-top: 40px;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  background: #1a1a1a; /* Slightly lighter black for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  width: calc(30% - 20px);
+  padding: 15px;
+  text-align: center;
+  color: #ddd;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .photo-box {
+    margin-top: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
